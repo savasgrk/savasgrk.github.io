@@ -1,3 +1,5 @@
+<html>
+	<body>
 <?php
 $lines=array();
 $myfile = fopen("https://savasgrk.github.io/Username.txt", "r") or die("Unable to open file!");
@@ -9,7 +11,6 @@ while(!feof($myfile))
    	 $lines[]=$line;
 	echo $line;
 }
-//$data= fread($myfile,filesize("/home/sp20/355/sosa6554/public_html/cs370/Username.txt"));
 $size= count($lines, COUNT_NORMAL);
 $name1;
 $password1;
@@ -59,3 +60,5 @@ if(isset($_POST['button1'])) {
 			<input type="submit" name="button1"
                 class="button" value="Button1" /> 
 	</form> 
+	</body>
+</html>
