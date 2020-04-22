@@ -85,7 +85,7 @@ if(isset($_POST['button1'])) {
 <script>
 
 	var data=[];
-	var size= <?php echo $size; ?>;
+	var size;
 	var newUsername;
 	var newPassword
 
