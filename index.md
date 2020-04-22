@@ -82,55 +82,7 @@ if(isset($_POST['button1'])) {
 			<input type="submit" name="button1"
                 class="button" value="Button1" /> 
 	</form> 
-<script>
 
-	var data=[];
-	var size;
-	var newUsername;
-	var newPassword
-
-function setUser()
-{
-//https://github.com/savasgrk/savasgrk.github.io/edit/master/index.md
-	newUsername= document.getElementById("Username").value;
-	newPassword= document.getElementById("Password").value;
-	for(var i=0; i<size; i++)
-	{
-		if(newUsername==data[i])
-		{
-			document.write("exists");
-	
-			return false;
-		}
-	}
-	if((!newPassword) || newPassword.length == 0 || newPassword==null)
-	{
-		document.write("null");
-		return false;
-	}
-	if((!newUsername) || newUsername.length == 0 || newUsername==null)
-	{
-		document.write("null");
-		return false;
-	}
-	document.write(newUsername);
-	data.push(newUsername);
-	document.write("\n");
-	document.write(data);
-	return true;
-}
-function main()
-{
-	var data=<?php echo json_encode($lines); ?>;
-	var size= <?php echo $size; ?>;
-	
-	
-	
-	document.write('the');
-	document.write(data);
-}
-main();
-</script>
 
 </body>
 </html>
