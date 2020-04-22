@@ -84,7 +84,7 @@ if(isset($_POST['button1'])) {
 	</form> 
 <script>
 
-	var data=<?php echo json_encode($lines); ?>;
+	var data=[];
 	var size= <?php echo $size; ?>;
 	var newUsername;
 	var newPassword
