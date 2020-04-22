@@ -1,5 +1,3 @@
-<html>
-	<body>
 <?php
 $lines=array();
 $myfile = fopen("https://savasgrk.github.io/Username.txt", "r") or die("Unable to open file!");
@@ -58,5 +56,3 @@ if(isset($_POST['button1'])) {
 			<input type="submit" name="button1"
                 class="button" value="Button1" /> 
 	</form> 
-	</body>
-</html>
