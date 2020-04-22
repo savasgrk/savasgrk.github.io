@@ -5,7 +5,7 @@
 <?php
 
 $lines=array();
-$myfile = fopen("Username.txt", "r") or die("Unable to open file!");
+$myfile = fopen("https://savasgrk.github.io/Username.txt", "r") or die("Unable to open file!");
 while(!feof($myfile))
 {
 	 $line=fgets($myfile);
@@ -63,7 +63,7 @@ if(isset($_POST['button1'])) {
 			}
 			
 			echo "reached";
-			$myfile1 = fopen("https://github.com/savasgrk/savasgrk.github.io/blob/master/Username.txt", "w+") or die("Unable to open file!");
+			$myfile1 = fopen("https://savasgrk.github.io/Username.txt", "w") or die("Unable to open file!");
 			fwrite($myfile1, $name);
 			fclose($myfile1);
 			echo "done";
