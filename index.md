@@ -74,7 +74,7 @@ if(isset($_POST['button1'])) {
 
 ?>
 
-	<form action="#" method="post"> 
+	<form method="post"> 
 		<h1> Snake Game Login Page </h1>
 		Username: <input type="text" name="Username" id="Username">
 		Password: <input type="text" name="Password" id="Password">
