@@ -1,9 +1,6 @@
-
 <html>
 <body>
-
 <?php
-
 $lines=array();
 $myfile = fopen("https://savasgrk.github.io/Username.txt", "r") or die("Unable to open file!");
 echo "File opened";
