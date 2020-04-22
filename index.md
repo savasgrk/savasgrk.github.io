@@ -14,9 +14,7 @@ while(!feof($myfile))
 $size= count($lines, COUNT_NORMAL);
 $name1;
 $password1;
-
 fclose($myfile);
-//$myfile1 = fopen("Username.txt", "r") or die("Unable to open file!");
 if(isset($_POST['button1'])) { 
             button1(); 
         } 
