@@ -5,7 +5,7 @@
 <?php
 
 $lines=array();
-$myfile = fopen("https://github.com/savasgrk/savasgrk.github.io/blob/master/Username.txt", "r") or die("Unable to open file!");
+$myfile = fopen("Username.txt", "r") or die("Unable to open file!");
 while(!feof($myfile))
 {
 	 $line=fgets($myfile);
@@ -23,7 +23,7 @@ $name1;
 $password1;
 
 fclose($myfile);
-//$myfile1 = fopen("/home/sp20/355/sosa6554/public_html/cs370/Username.txt", "r") or die("Unable to open file!");
+//$myfile1 = fopen("Username.txt", "r") or die("Unable to open file!");
 if(isset($_POST['button1'])) { 
             button1(); 
         } 
